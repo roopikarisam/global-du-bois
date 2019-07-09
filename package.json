@@ -27,22 +27,22 @@
   "homepage": "https://github.com/roopikarisam/Global-Du-Bois#readme",
   "dependencies": {
     "babel-loader": "^8.0.6",
+    "core-js": "^3.1.4",
     "css-loader": "^3.0.0",
-    "d3": "^5.9.5",
+    "d3": "^5.9.7",
     "html-webpack-plugin": "^3.2.0",
+    "regenerator-runtime": "^0.13.2",
     "style-loader": "^0.23.1",
-    "webpack": "^4.35.0",
+    "webpack": "^4.35.3",
     "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.7.2"
   },
   "devDependencies": {
-    "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.5",
-    "@babel/node": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.5.0",
+    "@babel/node": "^7.5.0",
+    "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
-    "@babel/register": "^7.4.4",
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0"
+    "@babel/register": "^7.4.4"
   }
 }

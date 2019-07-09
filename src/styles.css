@@ -1,0 +1,7 @@
+.navbar-brand {
+  position: relative;
+  background: url(../assets/img/logo.png);
+  width: 130px;
+  height: 53px;
+  background-size: contain;
+}
