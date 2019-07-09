@@ -12,7 +12,7 @@ module.exports = {
     path: path.resolve('dist'),
     filename: 'index_bundle.js'
   },
-  devtool: "source-map",
+  devtool: 'cheap-eval-source-map', //don't use in production just dev
   module: {
     rules: [
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/, }
