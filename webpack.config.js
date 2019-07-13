@@ -7,10 +7,18 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 });
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: {
+    index: './src/index.js',
+    about: './src/about.js',
+    citations: './src/citations.js',
+    credits: './src/credits.js',
+    letters: './src/letters.js',
+    networks: './src/networks.js',
+    travels: './src/travels.js'
+  },
   output: {
     path: path.resolve('dist'),
-    filename: 'index_bundle.js'
+    filename: '[name].bundle.js'
   },
   devtool: 'cheap-eval-source-map', //don't use in production just dev
   module: {
