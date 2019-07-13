@@ -28,36 +28,43 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
         filename: 'index.html',
+        template: 'src/index.html',
         inject: 'body',
         chunks: ['index']
       }),
       new HtmlWebpackPlugin({
         filename: 'about.html',
+        template: 'src/about.html',
         inject: 'body',
         chunks: ['about']
       }),
       new HtmlWebpackPlugin({
         filename: 'citations.html',
+        template: 'src/citations.html',
         inject: 'body',
         chunks: ['citations']
       }),
       new HtmlWebpackPlugin({
         filename: 'credits.html',
+        template: 'src/credits.html',
         inject: 'body',
         chunks: ['credits']
       }),
       new HtmlWebpackPlugin({
         filename: 'letters.html',
+        template: 'src/letters.html',
         inject: 'body',
         chunks: ['letters']
       }),
       new HtmlWebpackPlugin({
         filename: 'networks.html',
+        template: 'src/networks.html',
         inject: 'body',
         chunks: ['networks']
       }),
       new HtmlWebpackPlugin({
         filename: 'travels.html',
+        template: 'src/travels.html',
         inject: 'body',
         chunks: ['travels']
       }),
