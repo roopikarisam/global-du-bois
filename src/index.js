@@ -15,6 +15,5 @@ window.onload = function nav() {
   });
 };
 
-const circle = d3.selectAll('circle');
-circle.style('fill', 'steel blue');
-circle.attr('r', 30);
+const square = d3.selectAll('rect');
+square.style('fill', 'orange');
