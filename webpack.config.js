@@ -1,10 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
-  template: './src/index.html',
-  filename: 'index.html',
-  inject: 'body'
-});
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
 module.exports = {
   mode: 'development',
   entry: {
@@ -17,8 +14,9 @@ module.exports = {
     travels: './src/travels.js'
   },
   output: {
+    filename: '[name].bundle.js',
     path: path.resolve('dist'),
-    filename: '[name].bundle.js'
+    publicPath: '/'
   },
   devtool: 'cheap-eval-source-map', //don't use in production just dev
   module: {
@@ -26,6 +24,35 @@ module.exports = {
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/, }
     ]
   },
-  plugins: [HtmlWebpackPluginConfig]
-
+  plugins: [
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+        filename: 'index.html',
+        chunks: ['index']
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'about.html',
+       chunks: ['about']
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'citations.html',
+       chunks: ['citations']
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'credits.html',
+        chunks: ['credits']
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'letters.html',
+       chunks: ['letters']
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'networks.html',
+       chunks: ['networks']
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'travels.html',
+       chunks: ['travels']
+      }),
+  ]
 };
