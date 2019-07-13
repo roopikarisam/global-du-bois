@@ -1,13 +1,7 @@
-// import * as d3 from 'd3';
+import * as d3 from 'd3';
 // not sure if import goes here or in d3.js file -
 // was receiving error about location when it was in d3.js,
 // probably b/c dependency graph?
-
-// const circle = d3.selectAll("circle");
-
-// circle.style("fill", "steel blue");
-
-// circle.attr("r", 30);
 
 console.log('this is home');
 
@@ -20,3 +14,7 @@ window.onload = function nav() {
       .append('<span class="sr-only">(current)</span>');
   });
 };
+
+const circle = d3.selectAll('circle');
+circle.style('fill', 'steel blue');
+circle.attr('r', 30);
