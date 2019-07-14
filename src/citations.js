@@ -1,5 +1,9 @@
-console.log('citations page');
+import defaultExport from './navbar';
 
+defaultExport();
+
+console.log('citations page');
+/*
 window.onload = function nav() {
   $.get('/src/nav.html', (data) => {
     $('#common-navbar').html(data);
@@ -8,4 +12,4 @@ window.onload = function nav() {
       .find('a')
       .append('<span class="sr-only">(current)</span>');
   });
-};
+}; */
