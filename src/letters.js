@@ -1,6 +1,10 @@
+import defaultExport from './navbar';
+
+defaultExport();
+
 console.log('letters page');
 
-window.onload = function nav() {
+/* window.onload = function nav() {
   $.get('/src/nav.html', (data) => {
     $('#common-navbar').html(data);
     $('.navbar-nav').find('li:nth-child(2)')
@@ -8,4 +12,4 @@ window.onload = function nav() {
       .find('a')
       .append('<span class="sr-only">(current)</span>');
   });
-};
+}; */
