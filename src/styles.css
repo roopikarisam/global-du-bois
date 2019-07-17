@@ -1,7 +1,37 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  padding-bottom: 65px;
+}
+
 .navbar-brand {
   position: relative;
   background: url(../assets/img/logo.png);
   width: 130px;
   height: 53px;
   background-size: contain;
+}
+
+.page-footer {
+  height: -50px;
+  margin-top: -50px;
+}
+
+#sticky-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 65px;
+}
+
+#home {
+
+}
+
+#portrait {
+  }
 }
