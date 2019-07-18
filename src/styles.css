@@ -21,6 +21,10 @@ body {
   margin-top: -50px;
 }
 
+.map {
+  height: 550px;
+}
+
 #sticky-footer {
   position: absolute;
   bottom: 0;
