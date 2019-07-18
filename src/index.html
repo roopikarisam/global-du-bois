@@ -4,21 +4,41 @@
     <meta charset="utf-8">
     <title>The Global Du Bois</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!--tells bootstrap to change look based on device, e.g. phone vs. computer browser -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/src/styles.css"> <!-- these two links load bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/src/styles.css">
   </head>
   <body>
-    <div id="common-navbar"></div>
-    <div class="container">
-      <svg width="300px" height="150px">
+    <div class="container-fluid px-0">
+      <div id="common-navbar"></div>
+      <div class="row no-gutters">
+      <div class="col-md-8" id="home">
+        <img src="../assets/img/home.png" class="img-fluid">
+      </div>
+      <div class="col-md-4" id="portrait">
+        <img src="../assets/img/portrait.png" class="img-fluid">
+      </div>
+  </div>
+
+      <!--<svg width="300px" height="150px">
   <rect x="20" y="20" width="20px" height="20" rx="5" ry="5" />
   <rect x="60" y="20" width="20px" height="20" rx="5" ry="5" />
   <rect x="100" y="20" width="20px" height="20" rx="5" ry="5"/>
- </svg>
+</svg> -->
+<div>
+    <footer id="sticky-footer" class="py-3 bg-dark text-white-50">
+        <div class="container text-center">
+          <small>There are issues with this footer</small>
+        </div>
+      </footer>
+</div>
     </div>
+
+      <!-- Copyright -->
+
+
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><!--these two src links load Bootstrap's special JS-->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script><!--these two src links load Bootstrap's special JS-->
     <!--  <script src="scripts.js"></script> -->
     </body>
   </html>

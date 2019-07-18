@@ -5,15 +5,27 @@
     <title>Travels</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!--tells bootstrap to change look based on device, e.g. phone vs. computer browser -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/src/styles.css"> <!-- these two links load bootstrap -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+   crossorigin=""/>
+    <link rel="stylesheet" href="/src/styles.css">
   </head>
   <body>
-    <div id="common-navbar"></div>
-    <div class="container">
+    <div class="container-fluid px-0">
+      <div id="common-navbar"></div>
+      <div class="row no-gutters">
+        <div class="col-md-12" id="travel-map">
+      <div id="travels-map" class="map"></div>
     </div>
+    </div>
+    <footer id="sticky-footer" class="py-3 bg-dark text-white-50">
+          <div class="container text-center">
+            <small>There are issues with this footer</small>
+          </div>
+        </footer>
+  </div>
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><!--these two src links load Bootstrap's special JS-->
-    <!--  <script src="scripts.js"></script> -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+       <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
     </body>
   </html>
