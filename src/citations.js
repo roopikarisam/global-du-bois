@@ -1,8 +1,8 @@
-import defaultExport from './navbar';
+import defaultExport from "./navbar";
 
 defaultExport();
 
-console.log('citations page');
+console.log("citations page");
 /*
 window.onload = function nav() {
   $.get('/src/nav.html', (data) => {

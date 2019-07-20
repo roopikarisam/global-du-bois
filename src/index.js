@@ -1,5 +1,5 @@
 /* import * as d3 from 'd3'; */
-import defaultExport from './navbar';
+import defaultExport from "./navbar";
 
 defaultExport();
 
@@ -20,4 +20,4 @@ defaultExport();
 /* const square = d3.selectAll('rect');
 square.style('fill', 'orange'); */
 
-console.log('this is home');
+console.log("this is home");

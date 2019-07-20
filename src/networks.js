@@ -1,8 +1,8 @@
-import defaultExport from './navbar';
+import defaultExport from "./navbar";
 
 defaultExport();
 
-console.log('networks page');
+console.log("networks page");
 
 /* window.onload = function nav() {
   $.get('/src/nav.html', (data) => {
