@@ -1,11 +1,16 @@
 html {
-  position: relative;
-  min-height: 100%;
+  height: 100vh;
 }
 
 body {
   /* Margin bottom by footer height */
   padding-bottom: 65px;
+  height: 100vh;
+}
+
+.container-fluid {
+  min-height: 100%;
+  position: absolute;
 }
 
 .navbar-brand {
@@ -22,20 +27,18 @@ body {
 }
 
 .map {
-  height: 550px;
+  height: 100vh;
 }
 
 #sticky-footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 65px;
 }
 
 #home {
-
 }
 
 #portrait {
-  }
 }
