@@ -1,11 +1,30 @@
-html {
-  height: 100vh;
+html,
+body,
+.page {
+  height: 100%;
 }
 
 body {
-  /* Margin bottom by footer height */
-  padding-bottom: 65px;
-  height: 100vh;
+  overflow: hidden;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header {
+  flex: 0 0 auto;
+}
+
+.page-content {
+  flex: 1 1 auto;
+  position: relative; /* need this to position inner content */
+  overflow-y: auto;
+}
+
+.page-footer {
+  flex: 0 0 auto;
 }
 
 .my-flex-container {
@@ -37,10 +56,10 @@ body {
   background-size: contain;
 }
 
-.page-footer {
+/* .page-footer {
   height: -50px;
   margin-top: -50px;
-}
+} */
 
 .map {
   height: 100vh;
