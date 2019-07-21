@@ -8,6 +8,21 @@ body {
   height: 100vh;
 }
 
+.my-flex-container {
+  height: 100vh;
+  margin-bottom: 20px;
+}
+/.my-flex-container-column {
+  height: 100vh;
+  margin-bottom: 20px;
+}
+.my-flex-item {
+  height: 100vh;
+}
+.my-flex-item-2 {
+  height: 100vh;
+}
+
 .container-fluid {
   min-height: 100%;
   position: absolute;
