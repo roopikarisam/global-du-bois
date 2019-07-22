@@ -24,8 +24,8 @@ body {
 .page-content {
   flex-grow: 1;
   flex-direction: column;
-  *position: relative; /* need this to position inner content */
-  /*overflow-y: auto;*/
+  position: relative; /* need this to position inner content */
+  overflow-y: auto;
 }
 
 /*.page-footer {
