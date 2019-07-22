@@ -32,11 +32,19 @@ body {
   flex: 0 0 auto;
 }*/
 
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .my-flex-container {
   height: 100vh;
+  z-index: 1;
   /*margin-bottom: 20px;*/
 }
-/.my-flex-container-column {
+.my-flex-container-column {
   height: 100vh;
   /*margin-bottom: 20px;*/
 }
