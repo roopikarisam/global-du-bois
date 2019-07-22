@@ -7,20 +7,25 @@ body {
   overflow: hidden;
 }
 
-.page {
+.wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
+
+/*.wrapper > * {
+  padding: 20px;
+}*/
 
 .page-header {
   flex: 0 0 auto;
 }
 
 .page-content {
-  flex: 1 1 auto;
-  position: relative; /* need this to position inner content */
-  overflow-y: auto;
+  flex-grow: 1;
+  flex-direction: column;
+  *position: relative; /* need this to position inner content */
+  /*overflow-y: auto;*/
 }
 
 /*.page-footer {
