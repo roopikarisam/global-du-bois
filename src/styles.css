@@ -1,6 +1,5 @@
 html,
-body,
-.page {
+body {
   height: 100%;
 }
 
@@ -11,6 +10,7 @@ body {
 .page {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .page-header {
@@ -23,17 +23,17 @@ body {
   overflow-y: auto;
 }
 
-.page-footer {
+/*.page-footer {
   flex: 0 0 auto;
-}
+}*/
 
 .my-flex-container {
   height: 100vh;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
 }
 /.my-flex-container-column {
   height: 100vh;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
 }
 .my-flex-item {
   height: 100vh;
@@ -52,7 +52,7 @@ body {
   position: relative;
   background: url(../assets/img/logo.png);
   width: 130px;
-  height: 53px;
+  height: 60px;
   background-size: contain;
 }
 
@@ -66,13 +66,13 @@ body {
   z-index: 1;
 }
 
-#sticky-footer {
+/* #sticky-footer {
   position: fixed;
   bottom: 0;
   width: 100%;
   height: 65px;
   z-index: 2;
-}
+} */
 
 #home {
 }
